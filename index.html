@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BWI Contractors — Building Dallas–Fort Worth | Licensed General Contractor</title>
+  <meta name="description" content="BWI Contractors is a minority woman-owned, licensed, bonded and insured general contractor serving the DFW metroplex. Residential, multi-family and commercial construction, remodels, finish-outs and construction consulting.">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta property="og:title" content="BWI Contractors — Building Dallas–Fort Worth">
+  <meta property="og:description" content="Minority woman-owned general contractor with 20+ years of construction expertise across the DFW metroplex.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230b0b0d'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23ff5c1f' font-family='monospace' font-weight='bold'>B</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "BWI Contractors",
+    "telephone": "+1-817-618-3002",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1000 Ball Park Way, Suite 310",
+      "addressLocality": "Arlington",
+      "addressRegion": "TX",
+      "postalCode": "76011",
+      "addressCountry": "US"
+    },
+    "areaServed": "Dallas–Fort Worth Metroplex",
+    "description": "Minority woman-owned, licensed, bonded and insured general contractor serving the DFW metroplex."
+  }
+  </script>
+</head>
+<body data-theme="dark">
+
+  <!-- ══════════════ PRELOADER ══════════════ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__mark">
+        <span class="preloader__letter">B</span><span class="preloader__letter">W</span><span class="preloader__letter">I</span>
+      </div>
+      <div class="preloader__bar"><span class="preloader__fill" id="preloaderFill"></span></div>
+      <div class="preloader__meta">
+        <span class="mono">EST. DFW</span>
+        <span class="mono" id="preloaderPct">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ CURSOR ══════════════ -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ══════════════ SCROLL PROGRESS ══════════════ -->
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- ══════════════ NAV ══════════════ -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top" data-cursor="hover">
+      <svg viewBox="0 0 32 32" class="nav__logo-mark" aria-hidden="true">
+        <rect x="2" y="14" width="8" height="16" fill="currentColor"/>
+        <rect x="12" y="8" width="8" height="22" fill="currentColor" opacity=".7"/>
+        <rect x="22" y="2" width="8" height="28" fill="var(--accent)"/>
+      </svg>
+      <span>BWI<em>Contractors</em></span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#about" data-cursor="hover"><span class="mono nav__num">01</span>About</a>
+      <a href="#services" data-cursor="hover"><span class="mono nav__num">02</span>Services</a>
+      <a href="#process" data-cursor="hover"><span class="mono nav__num">03</span>Process</a>
+      <a href="#work" data-cursor="hover"><span class="mono nav__num">04</span>Work</a>
+      <a href="#contact" data-cursor="hover"><span class="mono nav__num">05</span>Contact</a>
+    </nav>
+    <a class="nav__cta magnetic" href="tel:+18176183002" data-cursor="hover">
+      <span class="nav__cta-dot"></span>(817) 618-3002
+    </a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+      <div class="hero__blueprint" aria-hidden="true">
+        <svg viewBox="0 0 640 480" fill="none" preserveAspectRatio="xMidYMax meet" id="blueprint">
+          <!-- skyline draws itself -->
+          <path class="bp" d="M0 460 H640"/>
+          <path class="bp" d="M40 460 V300 H120 V460"/>
+          <path class="bp" d="M60 300 V270 H100 V300"/>
+          <path class="bp" d="M140 460 V200 H230 V460"/>
+          <path class="bp" d="M160 200 V160 L185 130 L210 160 V200"/>
+          <path class="bp" d="M250 460 V120 H340 V460"/>
+          <path class="bp" d="M250 160 H340 M250 200 H340 M250 240 H340 M250 280 H340 M250 320 H340 M250 360 H340 M250 400 H340"/>
+          <path class="bp bp--accent" d="M295 120 V60 L320 40"/>
+          <path class="bp" d="M360 460 V240 H450 V460"/>
+          <path class="bp" d="M380 240 V210 H430 V240"/>
+          <path class="bp" d="M470 460 V170 H560 V460"/>
+          <path class="bp" d="M470 210 H560 M470 250 H560 M470 290 H560 M470 330 H560 M470 370 H560 M470 410 H560"/>
+          <path class="bp" d="M580 460 V330 H640"/>
+          <circle class="bp bp--accent" cx="320" cy="40" r="6"/>
+          <path class="bp bp--dim" d="M40 300 L140 200 M230 200 L250 120 M340 120 L360 240 M450 240 L470 170"/>
+        </svg>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal mono">
+          <span class="tick"></span>Minority woman-owned · Licensed · Bonded · Insured
+        </p>
+        <h1 class="hero__title" id="heroTitle">
+          <span class="line"><span>We build</span></span>
+          <span class="line"><span>what DFW</span></span>
+          <span class="line"><span class="accent-word">stands on.</span></span>
+        </h1>
+        <p class="hero__sub reveal">
+          BWI Contractors brings two decades of construction expertise to every
+          residential, multi-family and commercial project across the
+          Dallas–Fort Worth metroplex — from first drawing to final walkthrough.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#contact" class="btn btn--solid magnetic" data-cursor="hover">
+            Start your project
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#work" class="btn btn--ghost magnetic" data-cursor="hover">See the work</a>
+        </div>
+      </div>
+
+      <div class="hero__stats reveal">
+        <div class="stat">
+          <span class="stat__num"><span data-count="20">0</span>+</span>
+          <span class="stat__label mono">Years in construction</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num"><span data-count="3">0</span></span>
+          <span class="stat__label mono">Sectors mastered</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num"><span data-count="100">0</span>%</span>
+          <span class="stat__label mono">Licensed · bonded · insured</span>
+        </div>
+      </div>
+
+      <a class="hero__scroll mono" href="#about" data-cursor="hover" aria-label="Scroll to about section">
+        <span>SCROLL</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ══════════════ MARQUEE ══════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Residential</span><i>✦</i><span>Multi-Family</span><i>✦</i><span>Commercial</span><i>✦</i><span>New Construction</span><i>✦</i><span>Remodels</span><i>✦</i><span>Finish-Outs</span><i>✦</i><span>Consulting</span><i>✦</i>
+        <span>Residential</span><i>✦</i><span>Multi-Family</span><i>✦</i><span>Commercial</span><i>✦</i><span>New Construction</span><i>✦</i><span>Remodels</span><i>✦</i><span>Finish-Outs</span><i>✦</i><span>Consulting</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ══════════════ ABOUT ══════════════ -->
+    <section class="about section" id="about">
+      <div class="section__head">
+        <span class="section__index mono">01</span>
+        <h2 class="section__title">
+          <span class="reveal-line"><span>Built different,</span></span>
+          <span class="reveal-line"><span>on purpose.</span></span>
+        </h2>
+      </div>
+      <div class="about__body">
+        <p class="about__lead reveal">
+          BWI Contractors is a <mark>minority woman-owned</mark> general contractor
+          headquartered in Arlington, Texas — steps from the ballpark, at the
+          center of the metroplex we build for.
+        </p>
+        <p class="reveal">
+          For more than twenty years we've delivered projects the way owners wish
+          every contractor would: with seamless communication, disciplined on-site
+          organization, and workmanship that holds up long after the ribbon is cut.
+          Fully licensed, bonded and insured, we manage risk so you don't have to
+          think about it.
+        </p>
+        <div class="about__cards">
+          <div class="tilt-card reveal" data-tilt>
+            <span class="tilt-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5Z"/><path d="m8.5 12 2.5 2.5L16 9.5"/></svg>
+            </span>
+            <h3>Accountability, in writing</h3>
+            <p>Licensed, bonded and insured on every engagement. Scope, schedule and budget live in documents — not in someone's head.</p>
+          </div>
+          <div class="tilt-card reveal" data-tilt>
+            <span class="tilt-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 10h8M8 14h5M21 12a9 9 0 1 1-4-7.5"/><path d="M21 4v5h-5"/></svg>
+            </span>
+            <h3>Communication that ships</h3>
+            <p>You'll never chase us for a status update. Clear cadence, honest answers, and decisions surfaced before they become change orders.</p>
+          </div>
+          <div class="tilt-card reveal" data-tilt>
+            <span class="tilt-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.5 4.5 19 9m-9.5 9.5L5 14M4 20l3.5-.8L19 7.7a2 2 0 0 0 0-2.9l-.8-.8a2 2 0 0 0-2.9 0L3.8 15.5 3 19l1 1Z"/></svg>
+            </span>
+            <h3>Craft you can inspect</h3>
+            <p>Twenty-plus years of field experience means details are done right the first time — and we welcome you to look closely.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ SERVICES ══════════════ -->
+    <section class="services section" id="services">
+      <div class="section__head">
+        <span class="section__index mono">02</span>
+        <h2 class="section__title">
+          <span class="reveal-line"><span>Everything from</span></span>
+          <span class="reveal-line"><span>dirt to done.</span></span>
+        </h2>
+      </div>
+
+      <ul class="services__list" id="servicesList">
+        <li class="service reveal" data-cursor="view">
+          <button class="service__row" aria-expanded="false">
+            <span class="service__num mono">/ 01</span>
+            <span class="service__name">Residential Construction</span>
+            <span class="service__plus" aria-hidden="true"></span>
+          </button>
+          <div class="service__panel"><div class="service__panel-inner">
+            <p>Custom homes and major residential builds delivered with the rigor of commercial project management — permitted, inspected, and finished to live in for decades.</p>
+            <span class="service__tags mono">CUSTOM HOMES · ADDITIONS · GROUND-UP</span>
+          </div></div>
+        </li>
+        <li class="service reveal" data-cursor="view">
+          <button class="service__row" aria-expanded="false">
+            <span class="service__num mono">/ 02</span>
+            <span class="service__name">Multi-Family Construction</span>
+            <span class="service__plus" aria-hidden="true"></span>
+          </button>
+          <div class="service__panel"><div class="service__panel-inner">
+            <p>Apartments, townhomes and mixed-unit developments built on schedule — because in multi-family, every late day is a leasing day lost.</p>
+            <span class="service__tags mono">APARTMENTS · TOWNHOMES · MIXED-USE</span>
+          </div></div>
+        </li>
+        <li class="service reveal" data-cursor="view">
+          <button class="service__row" aria-expanded="false">
+            <span class="service__num mono">/ 03</span>
+            <span class="service__name">Commercial Construction</span>
+            <span class="service__plus" aria-hidden="true"></span>
+          </button>
+          <div class="service__panel"><div class="service__panel-inner">
+            <p>Retail, office and light industrial projects where downtime is money. We sequence trades tightly and keep your opening date sacred.</p>
+            <span class="service__tags mono">RETAIL · OFFICE · LIGHT INDUSTRIAL</span>
+          </div></div>
+        </li>
+        <li class="service reveal" data-cursor="view">
+          <button class="service__row" aria-expanded="false">
+            <span class="service__num mono">/ 04</span>
+            <span class="service__name">Remodels &amp; Rehabs</span>
+            <span class="service__plus" aria-hidden="true"></span>
+          </button>
+          <div class="service__panel"><div class="service__panel-inner">
+            <p>Whole-property transformations and value-add rehabs. We find what's behind the walls before it finds your budget.</p>
+            <span class="service__tags mono">RENOVATION · VALUE-ADD · RESTORATION</span>
+          </div></div>
+        </li>
+        <li class="service reveal" data-cursor="view">
+          <button class="service__row" aria-expanded="false">
+            <span class="service__num mono">/ 05</span>
+            <span class="service__name">Interior Finish-Outs</span>
+            <span class="service__plus" aria-hidden="true"></span>
+          </button>
+          <div class="service__panel"><div class="service__panel-inner">
+            <p>Shell-to-showroom interior build-outs for tenants and owners — millwork, MEP coordination, and finishes that match the rendering.</p>
+            <span class="service__tags mono">TENANT IMPROVEMENT · WHITE BOX · TURNKEY</span>
+          </div></div>
+        </li>
+        <li class="service reveal" data-cursor="view">
+          <button class="service__row" aria-expanded="false">
+            <span class="service__num mono">/ 06</span>
+            <span class="service__name">Construction Consulting</span>
+            <span class="service__plus" aria-hidden="true"></span>
+          </button>
+          <div class="service__panel"><div class="service__panel-inner">
+            <p>Pre-construction planning, budgeting, feasibility and post-construction closeout. Twenty years of lessons, applied to your project before ground breaks.</p>
+            <span class="service__tags mono">PRE-CON · BUDGETING · CLOSEOUT</span>
+          </div></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ══════════════ PROCESS ══════════════ -->
+    <section class="process section" id="process">
+      <div class="section__head">
+        <span class="section__index mono">03</span>
+        <h2 class="section__title">
+          <span class="reveal-line"><span>No surprises.</span></span>
+          <span class="reveal-line"><span>That's the process.</span></span>
+        </h2>
+      </div>
+      <ol class="process__steps">
+        <li class="process__step reveal">
+          <span class="process__phase mono">PHASE 01</span>
+          <h3>Listen &amp; scope</h3>
+          <p>We start with your goals, your site and your number. You get a real scope and a real budget — not a teaser bid that grows later.</p>
+        </li>
+        <li class="process__step reveal">
+          <span class="process__phase mono">PHASE 02</span>
+          <h3>Pre-construction</h3>
+          <p>Drawings, permits, procurement and scheduling locked before mobilization. Boring on paper. Priceless on site.</p>
+        </li>
+        <li class="process__step reveal">
+          <span class="process__phase mono">PHASE 03</span>
+          <h3>Build</h3>
+          <p>Organized sites, sequenced trades, weekly reporting. You always know what happened, what's next, and what it costs.</p>
+        </li>
+        <li class="process__step reveal">
+          <span class="process__phase mono">PHASE 04</span>
+          <h3>Close &amp; stand behind it</h3>
+          <p>Punch list, documentation, walkthrough — and a contractor who still answers the phone after the last invoice.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ══════════════ WORK (horizontal scroll) ══════════════ -->
+    <section class="work" id="work">
+      <div class="work__pin">
+        <div class="section__head work__head">
+          <span class="section__index mono">04</span>
+          <h2 class="section__title"><span class="reveal-line"><span>Recent ground broken.</span></span></h2>
+          <p class="work__hint mono" aria-hidden="true">SCROLL →</p>
+        </div>
+        <div class="work__track" id="workTrack">
+          <article class="project" data-cursor="view">
+            <div class="project__visual project__visual--a"><span class="project__id mono">PRJ-001</span></div>
+            <div class="project__meta">
+              <h3>Single-Family Custom Build</h3>
+              <span class="mono">RESIDENTIAL · DFW</span>
+            </div>
+          </article>
+          <article class="project" data-cursor="view">
+            <div class="project__visual project__visual--b"><span class="project__id mono">PRJ-002</span></div>
+            <div class="project__meta">
+              <h3>Multi-Family Development</h3>
+              <span class="mono">MULTI-FAMILY · ARLINGTON</span>
+            </div>
+          </article>
+          <article class="project" data-cursor="view">
+            <div class="project__visual project__visual--c"><span class="project__id mono">PRJ-003</span></div>
+            <div class="project__meta">
+              <h3>Commercial Finish-Out</h3>
+              <span class="mono">COMMERCIAL · DALLAS</span>
+            </div>
+          </article>
+          <article class="project" data-cursor="view">
+            <div class="project__visual project__visual--d"><span class="project__id mono">PRJ-004</span></div>
+            <div class="project__meta">
+              <h3>Full-Property Rehab</h3>
+              <span class="mono">REMODEL · FORT WORTH</span>
+            </div>
+          </article>
+          <article class="project project--cta" data-cursor="hover">
+            <a href="#contact">
+              <span>Your project<br>goes here.</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ BANNER ══════════════ -->
+    <section class="banner">
+      <p class="banner__text">
+        <span class="reveal-line"><span>“A build should feel <em>organized</em>,</span></span>
+        <span class="reveal-line"><span>not survived.”</span></span>
+      </p>
+      <span class="banner__attr mono reveal">— THE BWI STANDARD</span>
+    </section>
+
+    <!-- ══════════════ CONTACT ══════════════ -->
+    <section class="contact section" id="contact">
+      <div class="section__head">
+        <span class="section__index mono">05</span>
+        <h2 class="section__title">
+          <span class="reveal-line"><span>Let's talk about</span></span>
+          <span class="reveal-line"><span>your ground.</span></span>
+        </h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <a class="contact__phone" href="tel:+18176183002" data-cursor="hover">
+            (817) 618-3002
+          </a>
+          <p class="reveal">One call gets you a straight conversation about scope, budget and timeline. Consultations available for owners, investors and developers.</p>
+          <address class="contact__address mono reveal">
+            1000 BALL PARK WAY, SUITE 310<br>
+            ARLINGTON, TX 76011<br>
+            SERVING THE GREATER DFW METROPLEX
+          </address>
+          <div class="contact__badges reveal">
+            <span class="badge mono">LICENSED</span>
+            <span class="badge mono">BONDED</span>
+            <span class="badge mono">INSURED</span>
+            <span class="badge badge--accent mono">MINORITY WOMAN-OWNED</span>
+          </div>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" action="tel:+18176183002" novalidate>
+          <div class="field">
+            <input type="text" id="fName" name="name" placeholder=" " required autocomplete="name">
+            <label for="fName">Your name</label>
+          </div>
+          <div class="field">
+            <input type="tel" id="fPhone" name="phone" placeholder=" " required autocomplete="tel">
+            <label for="fPhone">Phone</label>
+          </div>
+          <div class="field">
+            <select id="fType" name="type" required>
+              <option value="" disabled selected hidden></option>
+              <option>Residential construction</option>
+              <option>Multi-family construction</option>
+              <option>Commercial construction</option>
+              <option>Remodel / rehab</option>
+              <option>Interior finish-out</option>
+              <option>Consulting</option>
+            </select>
+            <label for="fType">Project type</label>
+          </div>
+          <div class="field">
+            <textarea id="fMsg" name="message" rows="4" placeholder=" "></textarea>
+            <label for="fMsg">Tell us about the project</label>
+          </div>
+          <button type="submit" class="btn btn--solid btn--full magnetic" data-cursor="hover">
+            Request a consultation
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="contact__form-note mono" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <span class="footer__big" aria-hidden="true">BWI</span>
+    </div>
+    <div class="footer__bottom">
+      <span class="mono">© <span id="year"></span> BWI CONTRACTORS · ARLINGTON, TX</span>
+      <span class="mono">MINORITY WOMAN-OWNED · LICENSED · BONDED · INSURED</span>
+      <a class="mono footer__toTop" href="#top" data-cursor="hover">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
