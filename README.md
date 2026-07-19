@@ -26,7 +26,20 @@ woman-owned general contractor serving the Dallas–Fort Worth metroplex.
 index.html      — single-page site (hero, about, services, process, work, contact)
 css/style.css   — design system + all components
 js/main.js      — interaction layer
+vercel.json     — Vercel config (clean URLs, security + cache headers)
 ```
+
+## Deploy to Vercel
+
+The repo is Vercel-ready as a zero-config static site:
+
+1. Go to [vercel.com/new](https://vercel.com/new) and import this repository.
+2. Framework preset: **Other** — leave build command and output directory
+   empty (there is no build step; the repo root is served as-is).
+3. Deploy. `vercel.json` already sets clean URLs, security headers, and
+   sensible caching.
+
+Or from the CLI: `npx vercel --prod` in the repo root.
 
 ## Editing
 
